@@ -6,4 +6,7 @@
 
   date_default_timezone_set("Asia/Taipei");
 
+  include_once "classes/DB.php";
+  $con = DB::getConnection();
+
 ?>
