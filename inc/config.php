@@ -4,6 +4,10 @@
     exit('You do not have a config file');
   }
 
+  if(!isset($_SESSION)) {
+    session_start();
+  }
+
   date_default_timezone_set("Asia/Taipei");
 
   error_reporting(-1);
